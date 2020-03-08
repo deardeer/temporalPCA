@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="lib/d3.js"></script>
+    <script src='lib/jquery.js'></script>
+    <script src='lib/jquery-ui.js'></script>
+    <!-- <script src='lib/jquery-ui.structure.css'></script>
+    <script src='lib/jquery-ui.theme.css'></script> -->
+
+
+    <!-- <link rel="stylesheet" href="//code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css"> -->
+    <!-- <script src='lib/jquery-ui.css'></script> -->
+    <!-- <script src="//apps.bdimg.com/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="//apps.bdimg.com/libs/jqueryui/1.10.4/jquery-ui.min.js"></script> -->
+</head>
+
+<body>
+    <div width='100%' height='50' style='position:absolute; left: 10px; top: 15px; '>
+        <!-- <button onclick="changePause" id='changeStatus'>Pause</button>
+        <div id='slider' width='50' height='20' style="display:inline-block"></div>
+        <input id='curFrame' name=i type=range min=0 max=255 value=0 step=1 style="width: 180px;">
+        <span id="amount" style="">0</span> -->
+        <form style="font: 12px var(--sans-serif); font-variant-numeric: tabular-nums; display: flex; height: 33px; align-items: center;">
+            <button onclick="changePause" id='changeStatus' name=b type=button style="margin-right: 0.4em; width: 5em;">Pause</button>
+            <label style="display: flex; align-items: center;">
+              <input id = 'slider' name=i type=range min=1 max=113 value=1 step=1 style="width: 180px;">
+              <output id = 'curframetext' name=o style="margin-left: 0.4em;">1</output>
+            </label>
+        </form>`
+    </div>
+
+    <svg id='mysvg' height='900' width='900'>       
+    </svg>
+    <img src="" id="curOriPic" width='320' style='position:absolute; left: 920px; top: 20px; ' \>
+    <img src='' id='curDotPic' width='80' height="60" style="position: absolute; left: 920px; top: 320px; display: none;">
+    <span id='curDotPicName' style="position: absolute; left: 920px; top: 420px;"></span>
+    <script src="scatter.js"></script>
+</body>
+
+</html>
